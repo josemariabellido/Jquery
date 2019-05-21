@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bombilla</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".encender").click(function () {
+                $(".apagada").hide();
+                $(".encendida").show();
+                $(".encendida img").css("width", "300px");
+
+
+
+
+            });
+            $(".apagar").click(function () {
+                $(".encendida").hide();
+                $(".apagada").show();
+
+                $(".apagada img").css("width", "100px");
+
+
+            });
+
+
+
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <button class="encender">Encender</button>
+    <button class="apagar">Apagar</button>
+    <p class="encendida"><img src="encendida.gif"></p>
+    <p class="apagada"><img src="apagada.gif"></p>
+
+</body>
+
+</html>
